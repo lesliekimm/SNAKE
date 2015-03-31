@@ -1,0 +1,47 @@
+README — K-MEANS ALGORITHM
+COSC150 Project 2
+Author: Leslie Kim
+NetID: LK584
+
+CONTENTS:
+This directory contains an executable jar file, a zip archive file, an
+IMAGES directory and README file.
+The jar file is an executable file to run the Snake game. It was tested on
+Java 1.8.0_25-b17.
+The zip file contains all java and class files for each class for the Snake
+game, and JUnit Test files. Included are several class JUnit Tests. The
+parameterized JUnit Test is for a method in the Board class.
+The IMAGES directory contains screenshots of the initial Snake interface, 
+what the GUI looks like at the beginning of each level and a screenshot
+of each level while being played.
+
+DESCRIPTION:
+This is a recreation of the game Snake.
+
+The main is run in SnakeGUI class. It creates an SnakeGUI object which 
+creates a Board and SidePanel (JPanel extensions) and allows users to play
+the classic Snake game. No arguments are needed to run the game. There are
+three levels. In each level, the snake (green) must move around the board
+using the arrow keys or W/D/A/S keys and try to eat the apples (red) which
+are all one unit. In higher levels, there are walls/barriers that the snake
+cannot hit. The snake also cannot hit itself. Hitting the wall or itself
+will cause the game to end. If a player loses, the Side Panel will read
+“Game over!” at the bottom of the panel.
+
+Level 1 starts with a snake body of one unit and the player tries to eat
+the apples with no walls/barriers.
+Level 2 starts with a longer snake body which moves a little faster and an
+initial board layout which includes a cross section in the center of the
+board of Walls that the snake cannot hit. Each time an apple is eaten, a
+random barrier of one unit is placed on the board.
+Level 3 starts with an even longer snake body, faster speed, and more wall/
+barriers initially on the board. As is in Level 2, each time an apple is
+eaten, a random barrier of one unit is placed on the board.
+
+Each java file contains a detailed description of the class and its
+constructor(s) and methods.
+
+EXTRA CREDIT:
+1) Timer is used.
+2) Extra barriers are included in the design.
+3) Extra level.
